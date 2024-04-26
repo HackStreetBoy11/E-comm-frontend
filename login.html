@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <style>
+        @font-face{
+            font-family: 'SF-pro';
+            src: url("SF-Pro-Text-Semibold.otf");
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            font-family: 'SF-pro',sans-serif;
+        }
+        .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+
+        #one {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        #two img {
+            height: 600px;
+        }
+
+        #three {
+            padding: 50px;
+            background-color: #282828;
+            color: white;
+            max-height: 600px;
+        }
+        #inp{
+            width: 634px;
+        }
+
+        #three h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #three p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        #three button {
+            background-color: #cef23f;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            width: 100%;
+            opacity: 50%;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #three #d {
+            background-color: white;
+        }
+
+        #three button:hover {
+            background-color: #cef23f;
+        }
+
+        #three form {
+            margin-top: 20px;
+        }
+
+        #three input[type="text"] {
+            background-color: #ffffff6a;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        #three p {
+            color: rgb(255 255 255 / 60%);
+        }
+    </style>
+</head>
+<body ng-app="myapp">
+    <div class="container">
+        <div id="one">
+            <div id="two">
+                <img src="https://bezi.com/7bfccdfb389c2f7ec9fe585ef483a47b.jpg">
+            </div>
+            <div id="three">
+                <h1>Welcome to Bezi</h1>
+                <p>We'll sign you in or create an account if you don't have one yet</p>
+                <br>
+                <button style="background-color: white;" id="d">Continue with Google</button>
+                <br>
+                <hr>
+                <form action="index.html" ng-controller="eemail">
+                    <input type="text" id="inp" ng-model="email">
+                    <p>If {{email}} is correct then</p><br>
+                    <button type="submit" id="f" onclick="home()">Continue</button>
+                </form>
+                <p>By registering, you agree to Bezi’s Privacy Policy and Terms of Use.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var app = angular.module("myapp", []);
+        app.controller('eemail', function($scope, $location) {
+            $scope.email = 'abc@gmail.com';
+            $scope.home = function() {
+                $location.path("/index.html");
+            };
+        });
+    </script>
+</body>
+</html>
