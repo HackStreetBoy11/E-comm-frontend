@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body ng-controller="myCtrl">
+  <h1 class="disclaimer">DISCLAIMER - THIS WEBSITE IS MADE FOR EDUCATIONAL PURPOSE ONLY WITH NO INTENTION OF COPYING ANYBODY'S WORK OR WEBSITE</h1>
+    
+      <nav>
+        <img src="1.png" id="logo" />
+        <ul id="nav_items">
+          <li><a href="#" ng-click="showSection('first')">Home</a></li>
+          <li><a href="#" ng-click="showSection('second')">Product</a></li>
+          <li><a href="#" ng-click="showSection('third')">Resources</a></li>
+          <li><a href="#" ng-click="showSection('fourth')">Pricing</a></li>
+          <li><a href="#contact" ng-click="showSection('fifth')">Contact</a>
+            <div class="visible">
+              <ul class='dropdown'>
+                <li><a href="#">Phone</a></li>
+                <li><a href="#">Instagram</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <button type="button" class="getstart" onclick="login()">Get Started</button>
+      </nav>
+      <div ng-show="currentSection === 'first'">
+      <div class="second">
+        <div class="c2">
+          <div class="c1">
+            <span id="a1">Create faster, together</span><br>
+            <span id="a2">
+              Design 3D apps and games faster than ever before with Bezi.
+            </span>
+          </div>
+          <button type="button" class="getstart" onclick="login()">Get Started</button>
+        </div>
+        <video src="3.mp4" width="1000px" id="vid1" autoplay muted loop></video>
+      </div>
+  
+
+      <div class="third" id="about" >
+        <div class="c3">
+          <video src="4.mp4" id="vid2" autoplay muted loop></video>
+        </div>
+        <div class="c4">
+          <h3 id="a3">coming soon</h3>
+          <h1 id="a4">Bezi<br>VisionOS App</h1>
+          <button type="button" class="join">Join the waitlist</button>
+        </div>
+          
+      </div>
+      <div class="4th" >
+        <div id="a5">The fastest way for teams to design<br>3D apps and games together</div>
+        <div class="c5">
+          <div class="c6">
+            <video src="5.mp4" id="vid3" autoplay muted loop></video>
+            <div class="c9">
+            <h2 id="a6">Design and prototype 3D experiences for desktop, mobile, and headset</h2>
+            <h3 id="a7">Build your prototype on desktop, review on-the-go on mobile, and open the immersive prototype in your VR headset or mobile AR. Bezi is designed to be cross-platform out of the box.</h3></div>
+          </div>
+          <div class="c7">
+            <div class="c10">
+            <h2 id="a8">Powerful 3D design tool that feels familiar </h2>
+            <h3 id="a9">Bezi is inspired by 2D design tools, which means that even without 3D expertise, you can start creating quickly.</h3></div>
+            <video src="https://framerusercontent.com/assets/yIx6MN9pokYVl5rJyNafp8JQMg.mp4" id="vid4" autoplay muted loop></video>
+          </div>
+          <div class="c8">
+            <video src="6.mp4" id="vid5" autoplay muted loop></video>
+            <div class="c11">
+            <h2 id="a10">Built for teams—with live collaboration, review tools, and integrations</h2>
+            <h3 id="a11">We know real work is done in teams. Invite your team to a file to collaborate together in real-time, review, and handoff to devs.</h3></div>
+          </div>
+        </div>
+      </div>
+      <div class="fifth">
+        <div class="p1">
+          <h1>Trusted By top Design Teams</h1>
+        </div>
+        <div class="p2">
+          <section class="p3">
+            <ul class="p4" id="scroll">
+              <li class="list">
+                <div class="pp">
+                  <div class="p5">
+                    <div class="p6">
+                      <img src="16.webp" alt="">
+                    </div>
+                    <div class="p7">Kyungmin Kim
+
+                      Design Manager @ Nuro</div>
+                  </div>
+                  <div class="p8">
+                    <p class="p9">At Nuro, we strive to improve the 3D design process to be more collaborative and inclusive. We love how Bezi makes it easy to create and share ideas with other designers and engineers.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="pp">
+                  <div class="p5">
+                    <div class="p6">
+                      <img src="16.webp" alt="">
+                    </div>
+                    <div class="p7">Karen Campa-Perz
+                      Designer @ Meta
+
+                    </div>
+                  </div>
+                  <div class="p8">
+                    <p class="p9">Bezi is growing by the day. Highly recommend that you check out Bezi if you have even a casual interest in 3D tools. It is already having a major impact on my projects!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="pp">
+                  <div class="p5">
+                    <div class="p6">
+                      <img src="17.webp" alt="">
+                    </div>
+                    <div class="p7">Jakub Dano
+
+                      Director @ Stainless Reality</div>
+                  </div>
+                  <div class="p8">
+                    <p class="p9">Bezi makes it so easy to iterate and test. You can have people interact with your design and give feedback, which makes the whole design process faster to validate. Instant preview in VR simply with a URL is so exciting.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="pp">
+                  <div class="p5">
+                    <div class="p6">
+                      <img src="18.webp" alt="">
+                    </div>
+                    <div class="p7">Michele Carli
+
+                      UX Designer @ Omnium</div>
+                  </div>
+                  <div class="p8">
+                    <p class="p9">I'm a product designer at Meta working on solo work experiences for Horizon Workrooms. I've been experimenting with Bezi and I'm OBSESSED!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="pp">
+                  <div class="p5">
+                    <div class="p6">
+                      <img src="19.webp" alt="">
+                    </div>
+                    <div class="p7">Etienne Gernez
+
+                      Researcher @ OICL</div>
+                  </div>
+                  <div class="p8">
+                    <p class="p9">If you are looking to get into XR as a designer or even a programmer then check out Bezi which will allow you to quickly prototype an amazing XR experience that works with multiple platforms (AR/VR)!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="pp">
+                  <div class="p5">
+                    <div class="p6">
+                      <img src="20.webp" alt="">
+                    </div>
+                    <div class="p7">
+                      Du Hoang
+                      
+                      Design Lead @ Unity</div>
+                  </div>
+                  <div class="p8">
+                    <p class="p9">Bezi radically simplifies our 3D prototyping pipeline by removing the need for a game engine to generate VR ready scenes, and adds a whole new layer of collaborative features in the process.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="pp">
+                  <div class="p5">
+                    <div class="p6">
+                      <img src="21.webp" alt="">
+                    </div>
+                    <div class="p7">
+                      Ruby Chen
+                      
+                      Designer @ Amazon Lab126</div>
+                  </div>
+                  <div class="p8">
+                    <p class="p9">I wish Bezi existed five years ago when I started designing XR experiences! An interactive prototype is worth a thousand storyboard sketches. With Bezi, we're speeding up concepts and making more & better iterations!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="pp">
+                  <div class="p5">
+                    <div class="p6">
+                      <img src="22.webp" alt="">
+                    </div>
+                    <div class="p7">
+                      Karen Stritzinger
+                      
+                      Founder @ Old Hara Studios</div>
+                  </div>
+                  <div class="p8">
+                    <p class="p9">If you are just getting started I would give Bezi a shot. It lets you prototype without actually learning code or having to deal with downloading the right packages etc. As a designer, using RealityKit has been very challenging.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="pp">
+                  <div class="p5">
+                    <div class="p6">
+                      <img src="23.webp" alt="">
+                    </div>
+                    <div class="p7">
+                      Jakub Dano
+                      
+                      Director @ Stainless Reality</div>
+                  </div>
+                  <div class="p8">
+                    <p class="p9">Bezi is such a gift for rapid prototyping in 3D 😍🥰 no code, no Unity, no troubleshooting. Just connected with your designer mindset!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="pp">
+                  <div class="p5">
+                    <div class="p6">
+                      <img src="24.webp" alt="">
+                    </div>
+                    <div class="p7">Jess Lee
+
+                      Sr. Designer @ Google Lens</div>
+                  </div>
+                  <div class="p8">
+                    <p class="p9">Just discovered Bezi, and I have to say: this is the tool I've been searching for!! I've worked on 3D game projects using Figma, Gravity Sketch, and Unity, but Bezi appears to be the game changer!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="pp">
+                  <div class="p5">
+                    <div class="p6">
+                      <img src="16.webp" alt="">
+                    </div>
+                    <div class="p7">Kyungmin Kim
+
+                      Design Manager @ Nuro</div>
+                  </div>
+                  <div class="p8">
+                    <p class="p9">At Nuro, we strive to improve the 3D design process to be more collaborative and inclusive. We love how Bezi makes it easy to create and share ideas with other designers and engineers.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="pp">
+                  <div class="p5">
+                    <div class="p6">
+                      <img src="16.webp" alt="">
+                    </div>
+                    <div class="p7">Karen Campa-Perz
+                      Designer @ Meta
+
+                    </div>
+                  </div>
+                  <div class="p8">
+                    <p class="p9">Bezi is growing by the day. Highly recommend that you check out Bezi if you have even a casual interest in 3D tools. It is already having a major impact on my projects!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="pp">
+                  <div class="p5">
+                    <div class="p6">
+                      <img src="17.webp" alt="">
+                    </div>
+                    <div class="p7">Jakub Dano
+
+                      Director @ Stainless Reality</div>
+                  </div>
+                  <div class="p8">
+                    <p class="p9">Bezi makes it so easy to iterate and test. You can have people interact with your design and give feedback, which makes the whole design process faster to validate. Instant preview in VR simply with a URL is so exciting.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="pp">
+                  <div class="p5">
+                    <div class="p6">
+                      <img src="18.webp" alt="">
+                    </div>
+                    <div class="p7">Michele Carli
+
+                      UX Designer @ Omnium</div>
+                  </div>
+                  <div class="p8">
+                    <p class="p9">I'm a product designer at Meta working on solo work experiences for Horizon Workrooms. I've been experimenting with Bezi and I'm OBSESSED!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="pp">
+                  <div class="p5">
+                    <div class="p6">
+                      <img src="19.webp" alt="">
+                    </div>
+                    <div class="p7">Etienne Gernez
+
+                      Researcher @ OICL</div>
+                  </div>
+                  <div class="p8">
+                    <p class="p9">If you are looking to get into XR as a designer or even a programmer then check out Bezi which will allow you to quickly prototype an amazing XR experience that works with multiple platforms (AR/VR)!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="pp">
+                  <div class="p5">
+                    <div class="p6">
+                      <img src="20.webp" alt="">
+                    </div>
+                    <div class="p7">
+                      Du Hoang
+                      
+                      Design Lead @ Unity</div>
+                  </div>
+                  <div class="p8">
+                    <p class="p9">Bezi radically simplifies our 3D prototyping pipeline by removing the need for a game engine to generate VR ready scenes, and adds a whole new layer of collaborative features in the process.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="pp">
+                  <div class="p5">
+                    <div class="p6">
+                      <img src="21.webp" alt="">
+                    </div>
+                    <div class="p7">
+                      Ruby Chen
+                      
+                      Designer @ Amazon Lab126</div>
+                  </div>
+                  <div class="p8">
+                    <p class="p9">I wish Bezi existed five years ago when I started designing XR experiences! An interactive prototype is worth a thousand storyboard sketches. With Bezi, we're speeding up concepts and making more & better iterations!</p>
+                  </div>
+                </div>
+              </li>
+              
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div class="sixth" id="features" >
+        <div class="c12">
+          <h3>Powerful features for 3D workflows</h3>
+          <p>Design 3D scenes on a spatial canvas and add interactions and animations. Open it on any device. Collaborate with your team.</p>
+        </div>
+        <div class="c13">
+          <div class="c14">
+            <div class="small">
+              <img src="2.webp">
+              <div><h3>Real-time collaboration</h3>
+              <p>Jump into a file with your team and iterate together.</p></div>
+            </div>
+            <div class="small">
+              <img src="3.webp">
+              <div><h3>Figma integration</h3>
+              <p>Bring Figma frames into your design and keep them in sync.</p></div>
+            </div>
+            <div class="small">
+              <img src="4.webp">
+              <div><h3>Import 3D models</h3>
+              <p>Drag and drop GLB, FBX, and OBJ files from other programs into Bezi.</p></div>
+            </div>
+            <div class="small">
+              <img src="5.webp">
+              <div><h3>Components with Overrides</h3>
+              <p>Reuse components across files and share them with your team.</p></div>
+            </div>
+            <div class="large" id="grid1">
+              <img src="6.webp">
+              <div><h3>3D Interactions and Animations</h3>
+              <p>Make compelling 3D prototypes using our State Machine and Timeline feature (beta). All without a line of code. </p></div>
+            </div>
+            <div class="large" id="grid2">
+              <img src="7.webp">
+              <div><h3>AR/VR Headsets </h3>
+              <p>Prototypes you build in Bezi will work across desktop, mobile AR, and VR headsets right out of the box. </p></div>
+            </div>
+            <div class="small">
+              <img src="8.webp">
+              <div><h3>Mobile AR</h3>
+              <p>Build prototypes for mobile AR in Bezi. Share with a link.</p></div>
+            </div>
+            <div class="small">
+              <img src="9.webp">
+              <div><h3>Command Center</h3>
+              <p>Just start typing to access and activate any command in the app.</p></div>
+            </div>
+            <div class="small">
+              <img src="10.webp">
+              <div><h3>Materials</h3>
+              <p>Import materials or make your own using different material types.</p></div>
+            </div>
+            <div class="small">
+              <img src="11.webp">
+              <div><h3>Team Folders & Libraries</h3>
+              <p>Create a team, invite collaborators, and control permission settings.</p></div>
+            </div>
+            <div class="small">
+              <img src="12.webp">
+              <div><h3>Cameras</h3>
+              <p>Add cameras in the scene to save views and include them as bookmarks in the prototype.</p></div>
+            </div>
+            <div class="small">
+              <img src="13.webp">
+              <div><h3>Commenting</h3>
+              <p>Add pinned drawing comments for faster and more accurate feedback.</p></div>
+            </div>
+            <div class="small">
+              <img src="14.webp">
+              <div><h3>Embed on Web</h3>
+              <p>You can easily embed your published prototype on the web.</p></div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+
+
+
+      </div>
+    </div>
+    <div ng-show="currentSection === 'second'" >
+      <div class="s1">
+        <h1 class="o1">Build, refine, and collaborate<br> in 3D with Bezi</h1>
+        <p class="o2">Design with quick and easy 3D whiteboarding, advanced prototyping, and <br>seamless handoff to development with Bezi, a collaborative 3D design platform<br> for teams.</p>
+        <button type="button" class="getstart" onclick="login()">Get Started</button>
+      </div>
+      <div class="s2">
+        <div class="o3">
+          <div class="o4">
+            <img src="25.webp" alt="">
+            <div><h3 class="o10">Spatial Design</h3>
+            <p class="o11">Design and iterate using intuitive tools to create dynamic, interactive 3D apps and games.</p>
+          </div></div>
+          <div class="o4">
+            <video src="7.mp4" autoplay muted loop></video>
+            <div><h3 class="o10">Whiteboarding</h3>
+            <p class="o11">Collaborate and ideate in real-time or async with team members and stakeholders in a 3D spatial canvas.</p>
+          </div></div>
+        </div>
+        <div class="o6">
+          <video src="8.mp4" autoplay muted loop></video>
+            <div><h3 class="o10">Prototyping</h3>
+            <p class="o11">Rapidly refine and validate concepts with interactive 3D prototypes, and share them with a simple link.
+
+            </p>
+        </div></div>
+        <div class="o3">
+          <div class="o4">
+            <img src="26.webp" alt="">
+            <div><h3 class="o10">Design Reviews</h3>
+            <p class="o11">Bezi makes it easy for teams to move design forward, faster. Share the link, get better visibility into progress, leave comments, and iterate together.</p>
+          </div></div>
+          <div class="o4">
+            <img src="27.webp" alt="">
+            <div><h3 class="o10">Development</h3>
+            <p class="o11">The Bezi x Unity Integration makes it easy for designers to handoff designs to developers for production.</p>
+          </div></div>
+        </div>
+      </div>
+    </div>
+    <div ng-show="currentSection === 'third'">
+      <div class="i1">
+        <div class="i2">
+          <h4 class="i5">Resources</h4>
+          <h1 class="i6">Getting Started with Bezi</h1>
+          <h3 class="i7">Explore the limitless possibilities of 3D, AR, and VR design in the only<br>no-code, collaborative spatial design tool.</h3>
+          <button type="button" class="getstart" onclick="login()">Sign up for free</button>
+        </div>
+        <div class="i3">
+          <h1 class="i8">Design, prototype, and collaborate in 3D<br>easier and faster than ever.</h1>
+          <h4 class="i9">Welcome to Bezi, the only no-code, collaborative 3D design platform for designers in 3D, AR/VR, and spatial design.<br>Whether you're a curious beginner or a seasoned pro, Bezi has got you covered with resources, tutorials, and<br>community support to help you unlock your creative potential in the immersive realms of augmented and virtual reality.</h4>
+        </div>
+        <div class="i4">
+          <div class="i10">
+            <video src="9.mp4" autoplay muted loop></video>
+            <h3 class="i13">Used by industry leaders, instructors, and beginners</h3>
+            <h4 class="i14">Bezi is used by professional designers in industry-leading companies.</h4>
+          </div>
+          <div class="i10">
+            <img src="28.webp" alt="">
+            <h3 class="i13">For ideation, collaboration, and full immersion into 3D design</h3>
+            <h4 class="i14">Ideate in 3D in lightspeed and share designs with just a link that anyone can open.</h4>
+          </div>
+          <div class="i10">
+            <img src="29.webp" alt="">
+            <h3 class="i13">Free for education</h3>
+            <h4 class="i14">Instructors and students can use Bezi for free!</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div ng-show="currentSection === 'fourth'">
+     <div class="u0">
+       <div class="u1">
+         <h1 class="u2">Ready for the next level?</h1>
+         <p class="u3">Design and prototype 3D apps and games with your team using intuitive and powerful tools on Bezi.</p>
+       </div>
+       <div class="u4">
+         <div class="u5">
+           <div class="u6">
+            <div class="u7">
+              <p class="u11">Starter</p>
+            </div>
+            <div class="u8">
+              <h2 class="u12">Free</h2>
+              <h3 class="u13">For individuals and students</h3>
+            </div>
+            <div class="u9">
+              <button type="button" class="getstart" onclick="login()">Get Started</button>
+            </div>
+            <div class="u10">
+              <ul class="u14">
+                <li>Unlimited collaborators</li>
+                <li>
+                  15 personal files</li>
+                <li>
+                  3 files per team</li>
+                <li>
+                  30 MB per file</li>
+                <li>Unlimited access to headset and mobile prototypes</li>
+              </ul>
+            </div>
+          </div>
+          <div class="u6">
+            <div class="u7">
+              <p class="u11">Team</p>
+            </div>
+            <div class="u8">
+              <h2 class="u12">$80
+                <span id="y1">/seat /mo (annual)</span>
+                
+                <span id="y2">or $100 /seat /mo (monthly)</span></h2>
+              <h3 class="u13">For small to medium teams</h3>
+            </div>
+            <div class="u9">
+              <button type="button" class="getstart" onclick="login()">Get Started</button>
+            </div>
+            <div class="u10">
+              <ul class="u14">
+                <li>
+                  Everything in Starter and…</li>
+                <li>Unlimited personal files</li>
+                <li>
+                  100 files per team</li>
+                <li>
+                  100 MB per file</li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="u6">
+            <div class="u7">
+              <p class="u11">Enterprise</p>
+            </div>
+            <div class="u8">
+              <h2 class="u12">Custom</h2>
+              <h3 class="u13">For medium to large teams</h3>
+            </div>
+            <div class="u9">
+              <button type="button" class="getstart" onclick="login()">Get Started</button>
+            </div>
+            <div class="u10">
+              <ul class="u14">
+                <li>
+                  Unlimited files per team</li>
+                <li>Unlimited MB per file</li>
+                <li>
+                  Org workspace (permissions and user management)</li>
+                <li>
+                  Advanced security</li>
+                <li>
+                  Priority customer success</li>
+                <li>SSO</li>
+                <li>SLA / MSA</li> 
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <div ng-show="currentSection === 'fifth'"></div>
+     <div class="seventh" id="contact">
+      <div class="c15">
+        <div class="c16">
+          <div class="c17">
+            <div>
+              <h1 style="font-size: 56px;">Sign up today - get started for free</h1>
+            </div>
+            <div>
+              <button type="button" class="getstart" onclick="login()">Get Started</button>
+            </div>
+          </div>
+          <div class="c18">
+            <div class="c19">
+              <a href="#" class="words">Product</a>
+              <a href="#" class="words">Resources</a>
+              <a href="#" class="words">Made in Bazi</a>
+              <a href="#" class="words">Blog</a>
+              <a href="#" class="words">Security</a>
+              <a href="#" class="words">Community</a>
+              <a href="#" class="words">Pricing</a>
+              <a href="#" class="words">Careers</a>
+              <a href="#" class="words">About
+              </a>
+            </div>
+            <div>
+              <p>hello@bezi.com</p>
+              <p>+91 9588120502</p>
+              <p>© 2024 Bezi, Inc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script>
+      angular.module('myApp', [])
+  .controller('myCtrl', function($scope) {
+    $scope.currentSection = 'first'; // Default section to show
+
+    $scope.showSection = function(section) {
+      $scope.currentSection = section;
+    };
+  });
+    </script>
+  </body>
+</html>
