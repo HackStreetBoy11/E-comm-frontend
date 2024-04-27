@@ -25,7 +25,7 @@ Installation:
 To run the Bezi website locally, you'll need the following:
 
 Node.js and npm (or yarn): These are essential for managing JavaScript dependencies. You can download Node.js from the official website (https://nodejs.org/en), and npm will be included. Alternatively, you can use package managers like yarn.
-Clone this repository: git clone https://github.com/YourUsername/bezi-website.git
+Clone this repository: git clone https://github.com/piyush95881/bezi-website.git
 Install dependencies: Navigate to the project directory: cd bezi-website, then install the required dependencies: npm install (or yarn install).
 Usage:
 
