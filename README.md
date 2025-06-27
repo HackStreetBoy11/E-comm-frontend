@@ -4,15 +4,17 @@ A fully responsive and visually appealing **e-commerce website frontend** for sh
 
 ---
 
-## 🌐 Live Preview
-
-> Coming soon – Add your GitHub Pages or live deployment link here
-
----
-
 ## 📸 Screenshots
 
-> *(Include some UI screenshots here for homepage, product page, and payment page)*
+### 🏠 Homepage
+![Homepage Screenshot](screenshots/home.png)
+
+### 🎮 Product Page
+![Products Screenshot](screenshots/products.png)
+
+### 💳 Payment Page
+![Payment Screenshot](screenshots/payment.png)
+
 ---
 
 ## 🧰 Tech Stack
