@@ -10,7 +10,7 @@ A fully responsive and visually appealing **e-commerce website frontend** for sh
 ![Homepage Screenshot](screenshots/home.png)
 
 ### 🎮 Product Page
-![Products Screenshot](screenshots/products.png)
+![Products Screenshot](screenshots/product.png)
 
 ### 💳 Payment Page
 ![Payment Screenshot](screenshots/payment.png)
