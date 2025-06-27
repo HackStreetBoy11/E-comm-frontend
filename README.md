@@ -13,7 +13,6 @@ A fully responsive and visually appealing **e-commerce website frontend** for sh
 ## 📸 Screenshots
 
 > *(Include some UI screenshots here for homepage, product page, and payment page)*
-
 ---
 
 ## 🧰 Tech Stack
